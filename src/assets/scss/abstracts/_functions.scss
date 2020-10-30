@@ -15,7 +15,7 @@
   }
 }
 
-@function contrast($color, $dark: color(dark), $light: color(light)) {
+@function contrast($color, $dark: color(dark), $light: color(white)) {
   @if (lightness($color) > 75) { @return $dark; }
   @else { @return $light; }
 }

@@ -1,0 +1,8 @@
+header.header {
+  @include contrast(color-neutral(700));
+
+  .title {
+    line-height: 1;
+    margin: 0;
+  }
+}

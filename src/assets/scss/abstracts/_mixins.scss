@@ -1,4 +1,4 @@
-@mixin contrast($background: color(neutral), $dark: color(dark), $light: color(light)) {
+@mixin contrast($background: color(neutral), $dark: color(dark), $light: color(white)) {
   @if ($background == none) {
     background: none;
     color: inherit;

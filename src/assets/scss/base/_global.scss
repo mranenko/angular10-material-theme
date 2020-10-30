@@ -13,13 +13,17 @@
 
 html {
   @include contrast(color-neutral(50));
+
+  font-family: font(text, family);
   font-size: 10px;
   line-height: 1.5;
 }
 
 body {
   @include contrast(none);
-  font-size: 1.2rem;
+
+  font-family: inherit;
+  font-size: font(text, size);
   line-height: inherit;
 }
 
@@ -34,12 +38,30 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle {
   font-weight: font(title, weight);
   line-height: 1.25;
 }
-h1 { font-size: font(h1, size); }
-h2 { margin: font(h2, margin); }
-h3 { margin: font(h3, margin); }
-h4 { font-size: font(h4, size); }
+h1 {
+  font-size: font(h1, size);
+  margin: font(h1, margin);
+}
+h2 {
+  font-size: font(h2, size);
+  margin: font(h2, margin);
+}
+h3 {
+  font-size: font(h3, size);
+  margin: font(h3, margin);
+}
+h4 {
+  font-size: font(h4, size);
+  margin: font(h4, margin);
+}
 h5 { font-size: font(h5, size); }
 h6 { font-size: font(h6, size); }
+
+hr {
+  border: solid color-neutral(100);
+  border-width: 2px 0 0;
+  margin: 2rem 0;
+}
 
 
 /**
