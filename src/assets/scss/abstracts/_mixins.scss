@@ -1,0 +1,43 @@
+@mixin contrast($background: color(neutral), $dark: color(dark), $light: color(light)) {
+  @if ($background == none) {
+    background: none;
+    color: inherit;
+  }
+  @else {
+    background: $background;
+    color: contrast($background, $dark, $light);
+  }
+}
+
+@mixin placeholder($color) {
+	&::-webkit-input-placeholder { color: $color; }
+	&::-moz-placeholder { color: $color; }
+	&:-ms-input-placeholder { color: $color; }
+	&:-moz-placeholder { color: $color; }
+	&::placeholder { color: $color; }
+}
+
+@mixin position($position: absolute, $top: auto, $right: auto, $bottom: auto, $left: auto, $z-index: auto) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	z-index: $z-index;
+}
+
+@mixin respond-to($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+	@else {
+		@error 'Undefined breakpoint `#{$breakpoint}`';
+	}
+}
+
+@mixin size($width: 100%, $height: $width) {
+	width: $width;
+	height: $height;
+}

@@ -1,0 +1,9 @@
+.expansion-panel.mat-expansion-panel {
+  @include contrast(color(white));
+
+  border: 1px solid neutral(200);
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 0 1.5rem;
+  padding: 2rem;
+}

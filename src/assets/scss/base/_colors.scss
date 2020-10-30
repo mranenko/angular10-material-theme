@@ -1,0 +1,98 @@
+/**
+	Color variables
+ */
+
+$-watermelon: #d75a6c;
+$-kiwi: #378ca0;
+$-lychee: #b199ac;
+
+$-avocado: #47a981;
+$-blueberry: #477ba9;
+$-pomegranate: #a94747;
+$-beet: #a94778;
+
+
+/**
+	Main colors and accessor functions
+ */
+
+$colors: (
+  primary: $-watermelon,
+  accent: $-kiwi,
+  neutral: $-lychee,
+
+  success: $-avocado,
+  info: $-blueberry,
+  warning: $-beet,
+  danger: $-pomegranate,
+);
+
+@function color($key) { @return map-get($colors, $key); }
+
+
+/**
+  Main color levels
+ */
+
+$color-primary: (
+  50: level(color(primary), 50),
+  100: level(color(primary), 100),
+  200: level(color(primary), 200),
+  300: level(color(primary), 300),
+  400: level(color(primary), 400),
+  500: level(color(primary), 500),
+  600: level(color(primary), 600),
+  700: level(color(primary), 700),
+  800: level(color(primary), 800),
+  900: level(color(primary), 900),
+);
+
+$color-accent: (
+  50: level(color(accent), 50),
+  100: level(color(accent), 100),
+  200: level(color(accent), 200),
+  300: level(color(accent), 300),
+  400: level(color(accent), 400),
+  500: level(color(accent), 500),
+  600: level(color(accent), 600),
+  700: level(color(accent), 700),
+  800: level(color(accent), 800),
+  900: level(color(accent), 900),
+);
+
+$color-neutral: (
+  50: level(color(neutral), 50),
+  100: level(color(neutral), 100),
+  200: level(color(neutral), 200),
+  300: level(color(neutral), 300),
+  400: level(color(neutral), 400),
+  500: level(color(neutral), 500),
+  600: level(color(neutral), 600),
+  700: level(color(neutral), 700),
+  800: level(color(neutral), 800),
+  900: level(color(neutral), 900),
+);
+
+@function color-primary($key) {
+  @return map-get($color-primary, $key);
+}
+
+@function color-accent($key) {
+  @return map-get($color-accent, $key);
+}
+
+@function color-neutral($key) {
+  @return map-get($color-neutral, $key);
+}
+
+
+/**
+  Additional neutral colors
+ */
+
+$colors: map-merge($colors,
+  (
+    dark: color-neutral(900),
+    light: color-neutral(50),
+  )
+);

@@ -2,15 +2,30 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {BrowserModule} from '@angular/platform-browser';
 
-/* Angular Material */
+/* material */
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material.module';
 import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+
+/* app pages */
+import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
+import { AutocompletePageComponent } from './pages/autocomplete-page/autocomplete-page.component';
+import { ButtonsPageComponent } from './pages/buttons-page/buttons-page.component';
+import { CardsPageComponent } from './pages/cards-page/cards-page.component';
+
+
+const appPages = [
+  WelcomePageComponent,
+];
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    ...appPages,
+    AutocompletePageComponent,
+    ButtonsPageComponent,
+    CardsPageComponent,
   ],
   imports: [
     AppRoutingModule,

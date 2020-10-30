@@ -1,0 +1,43 @@
+@import '../../../../../../node_modules/@angular/material/theming';
+@include mat-core();
+
+$color-primary: map-merge($color-primary, (
+  contrast: (
+    50: contrast(color-primary(50)),
+    100: contrast(color-primary(100)),
+    200: contrast(color-primary(200)),
+    300: contrast(color-primary(300)),
+    400: contrast(color-primary(400)),
+    500: contrast(color-primary(500)),
+    600: contrast(color-primary(600)),
+    700: contrast(color-primary(700)),
+    800: contrast(color-primary(800)),
+    900: contrast(color-primary(900)),
+  ),
+));
+
+$color-accent: map-merge($color-accent, (
+  contrast: (
+    50: contrast(color-accent(50)),
+    100: contrast(color-accent(100)),
+    200: contrast(color-accent(200)),
+    300: contrast(color-accent(300)),
+    400: contrast(color-accent(400)),
+    500: contrast(color-accent(500)),
+    600: contrast(color-accent(600)),
+    700: contrast(color-accent(700)),
+    800: contrast(color-accent(800)),
+    900: contrast(color-accent(900)),
+  ),
+));
+
+$material-light-theme: mat-light-theme((
+  color: (
+    primary: mat-palette($color-primary),
+    accent: mat-palette($color-accent),
+  )
+));
+
+@include angular-material-theme($material-light-theme);
+
+//@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
