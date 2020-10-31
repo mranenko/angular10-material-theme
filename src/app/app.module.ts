@@ -16,6 +16,9 @@ import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 
 const appPages = [
   WelcomePageComponent,
+  AutocompletePageComponent,
+  ButtonsPageComponent,
+  CardsPageComponent,
 ];
 
 
@@ -23,9 +26,6 @@ const appPages = [
   declarations: [
     AppComponent,
     ...appPages,
-    AutocompletePageComponent,
-    ButtonsPageComponent,
-    CardsPageComponent,
   ],
   imports: [
     AppRoutingModule,

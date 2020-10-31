@@ -1,9 +1,69 @@
-.card.mat-card {
-  @include contrast(color(white));
+.summer-theme {
+  .mat-button-base {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: color(neutral);
+    line-height: 2rem;
+    margin: .2rem 0;
+    padding: 1rem 2rem;
 
-  border: 1px solid neutral(200);
-  border-radius: 0;
-  box-shadow: none;
-  margin: 0 0 1.5rem;
-  padding: 2rem;
+    @each $color, $value in $colors {
+      &.mat-#{'' + $color} {
+        color: $value;
+      }
+    }
+  }
+
+  .mat-stroked-button {
+    border: .2rem solid color(neutral);
+    color: color(neutral);
+    padding: .8rem 1.8rem;
+
+    @each $color, $value in $colors {
+      &.mat-#{'' + $color} {
+        border: .2rem solid $value;
+        color: $value;
+      }
+    }
+
+    &[disabled],
+    &.mat-button-disabled {
+      border: 0;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .mat-flat-button,
+  .mat-raised-button {
+    @include contrast(color(neutral));
+
+    @each $color, $value in $colors {
+      &.mat-#{'' + $color} {
+        @include contrast($value);
+      }
+    }
+  }
+
+  .mat-raised-button {
+    box-shadow: 0 .2rem .2rem rgba(color(dark), .2);
+  }
+}
+
+
+/**
+  Button group
+ */
+
+.summer-theme .mat-button-group {
+  margin: 0 -.2rem;
+
+  .mat-button-base {
+    display: inline-block;
+    margin: .2rem;
+  }
+
+  &.mat-button-group-center { text-align: center; }
+  &.mat-button-group-left { text-align: left; }
+  &.mat-button-group-right { text-align: right; }
 }

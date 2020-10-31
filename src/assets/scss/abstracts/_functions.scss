@@ -1,7 +1,7 @@
 @function shade($color, $percentage) { @return mix(black, $color, $percentage); }
 @function tint($color, $percentage) { @return mix(white, $color, $percentage); }
 
-@function level($color: color(neutral), $level: 500, $color-interval: 19) {
+@function level($color: color(neutral), $level: 500, $color-interval: 18) {
   @if ($level < 500) {
     $-color-percentage: $color-interval * ((500 - $level) / 100);
     @return tint($color, $-color-percentage);
