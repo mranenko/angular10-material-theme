@@ -9,14 +9,12 @@ import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 /* app pages */
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
-import { AutocompletePageComponent } from './pages/autocomplete-page/autocomplete-page.component';
 import { ButtonsPageComponent } from './pages/buttons-page/buttons-page.component';
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 
 
 const appPages = [
   WelcomePageComponent,
-  AutocompletePageComponent,
   ButtonsPageComponent,
   CardsPageComponent,
 ];

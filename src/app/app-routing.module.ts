@@ -3,7 +3,6 @@ import {Routes, RouterModule} from '@angular/router';
 
 /* app pages */
 import {WelcomePageComponent} from './pages/welcome-page/welcome-page.component';
-import {AutocompletePageComponent} from './pages/autocomplete-page/autocomplete-page.component';
 import {ButtonsPageComponent} from './pages/buttons-page/buttons-page.component';
 import {CardsPageComponent} from './pages/cards-page/cards-page.component';
 
@@ -18,11 +17,6 @@ const routes: Routes = [
     path: 'welcome',
     pathMatch: 'full',
     component: WelcomePageComponent,
-  },
-  {
-    path: 'autocomplete',
-    pathMatch: 'full',
-    component: AutocompletePageComponent,
   },
   {
     path: 'buttons',
