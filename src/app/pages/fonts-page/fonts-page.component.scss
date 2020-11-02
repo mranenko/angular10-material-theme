@@ -1,0 +1,26 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+@import 'base/breakpoints';
+@import 'base/colors';
+@import 'base/fonts';
+
+
+.font-family-code {
+  font-family: font(code, family);
+  font-size: font(code, size);
+  font-weight: font(code, weight);
+}
+
+.font-family-text {
+  font-family: font(text, family);
+  font-size: font(text, size);
+  font-weight: font(text, weight);
+}
+
+.font-family-title {
+  font-family: font(title, family);
+  font-size: font(text, size);
+  font-weight: font(title, weight);
+}
+
