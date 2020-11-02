@@ -7,8 +7,13 @@
     min-height: 100vh;
   }
 
+  .mat-sidenav-container {
+    background: none;
+  }
+
+
   .mat-sidenav {
-    @include contrast(color-neutral(100));
+    @include contrast(color-neutral(200));
 
     border: 0;
     left: 0;

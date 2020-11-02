@@ -9,6 +9,7 @@
     padding: 2rem;
   }
 
+
   .mat-card-image {
     width: calc(100% + 4rem);
     margin: 0 -2rem 2rem;
@@ -16,5 +17,13 @@
     &:first-child {
      margin-top: -2rem;
     }
+  }
+
+
+  .mat-card-title {
+    font-family: font(title, family);
+    font-size: font(h3, size);
+    font-weight: font(title, weight);
+    margin: 0;
   }
 }

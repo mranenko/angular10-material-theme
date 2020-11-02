@@ -1,0 +1,81 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+@import 'base/breakpoints';
+@import 'base/colors';
+@import 'base/fonts';
+
+
+/**
+  Colors swatches
+ */
+
+.swatch {
+  display: block;
+  font-family: font(code, family);
+  font-size: font(code, size);
+  font-weight: font(code, weight);
+  min-height: 6rem;
+  padding: 1.5rem 2rem;
+
+  &::after,
+  &::before {
+    display: block;
+  }
+}
+
+@each $color, $value in $colors {
+  .swatch-#{'' + $color} {
+    @include contrast($value);
+
+    &::after {
+      content: '#{$value}';
+    }
+
+    &::before {
+      content: 'color(#{$color})';
+    }
+  }
+}
+
+@each $color, $value in $color-primary {
+  .swatch-primary-#{'' + $color} {
+    @include contrast($value);
+
+    &::after {
+      content: '#{$value}';
+    }
+
+    &::before {
+      content: 'color-primary(#{$color})';
+    }
+  }
+}
+
+@each $color, $value in $color-accent {
+  .swatch-accent-#{'' + $color} {
+    @include contrast($value);
+
+    &::after {
+      content: '#{$value}';
+    }
+
+    &::before {
+      content: 'color-accent(#{$color})';
+    }
+  }
+}
+
+@each $color, $value in $color-neutral {
+  .swatch-neutral-#{'' + $color} {
+    @include contrast($value);
+
+    &::after {
+      content: '#{$value}';
+    }
+
+    &::before {
+      content: 'color-neutral(#{$color})';
+    }
+  }
+}
