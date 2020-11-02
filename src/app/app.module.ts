@@ -11,6 +11,8 @@ import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 import { ButtonsPageComponent } from './pages/buttons-page/buttons-page.component';
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
+import { ColorsPageComponent } from './pages/colors-page/colors-page.component';
+import { FontsPageComponent } from './pages/fonts-page/fonts-page.component';
 
 
 const appPages = [
@@ -24,6 +26,8 @@ const appPages = [
   declarations: [
     AppComponent,
     ...appPages,
+    ColorsPageComponent,
+    FontsPageComponent,
   ],
   imports: [
     AppRoutingModule,
