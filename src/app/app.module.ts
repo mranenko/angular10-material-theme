@@ -13,6 +13,8 @@ import { ButtonsPageComponent } from './pages/buttons-page/buttons-page.componen
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 import { ColorsPageComponent } from './pages/colors-page/colors-page.component';
 import { FontsPageComponent } from './pages/fonts-page/fonts-page.component';
+import { ToolbarPageComponent } from './pages/toolbar-page/toolbar-page.component';
+import { TabsPageComponent } from './pages/tabs-page/tabs-page.component';
 
 
 const appPages = [
@@ -28,6 +30,8 @@ const appPages = [
     ...appPages,
     ColorsPageComponent,
     FontsPageComponent,
+    ToolbarPageComponent,
+    TabsPageComponent,
   ],
   imports: [
     AppRoutingModule,

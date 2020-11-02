@@ -7,6 +7,8 @@ import {CardsPageComponent} from './pages/cards-page/cards-page.component';
 import {ColorsPageComponent} from './pages/colors-page/colors-page.component';
 import {FontsPageComponent} from './pages/fonts-page/fonts-page.component';
 import {WelcomePageComponent} from './pages/welcome-page/welcome-page.component';
+import {TabsPageComponent} from './pages/tabs-page/tabs-page.component';
+import {ToolbarPageComponent} from './pages/toolbar-page/toolbar-page.component';
 
 
 const routes: Routes = [
@@ -34,6 +36,16 @@ const routes: Routes = [
     path: 'fonts',
     pathMatch: 'full',
     component: FontsPageComponent,
+  },
+  {
+    path: 'tabs',
+    pathMatch: 'full',
+    component: TabsPageComponent,
+  },
+  {
+    path: 'toolbar',
+    pathMatch: 'full',
+    component: ToolbarPageComponent,
   },
   {
     path: 'welcome',
