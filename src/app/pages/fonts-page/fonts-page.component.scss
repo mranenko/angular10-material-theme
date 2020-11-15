@@ -10,6 +10,7 @@
   font-family: font(code, family);
   font-size: font(code, size);
   font-weight: font(code, weight);
+  line-height: font(code, line-height);
 }
 
 .font-family-text {
@@ -23,4 +24,3 @@
   font-size: font(text, size);
   font-weight: font(title, weight);
 }
-

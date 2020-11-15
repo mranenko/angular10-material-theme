@@ -1,5 +1,6 @@
 header.header {
-  @include contrast(color-neutral(700));
+  //@include contrast(color-neutral(700));
+  @include contrast(color(primary));
 
   .title {
     line-height: 1;

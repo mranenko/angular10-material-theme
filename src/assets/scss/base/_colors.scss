@@ -2,15 +2,15 @@
 	Color variables
  */
 
-$-watermelon: #d75a6c;
-$-kiwi: #378ca0;
-$-lychee: #d6c1c6;
+$-bougainvillea: #b32f8f;
+$-sea: #1394b3;
+$-sand: #d6cacd;
 $-cloud: #fdfcfc;
 
-$-avocado: #47a981;
-$-blueberry: #477ba9;
-$-pomegranate: #a94747;
-$-beet: #a94778;
+$-avocado: #2fb37e;
+$-sky: #2f68b3;
+$-pomegranate: #b32f2f;
+$-mustard: #ce802d;
 
 
 /**
@@ -18,14 +18,14 @@ $-beet: #a94778;
  */
 
 $colors: (
-  primary: $-watermelon,
-  accent: $-kiwi,
-  neutral: $-lychee,
+  primary: $-bougainvillea,
+  accent: $-sea,
+  neutral: $-sand,
   white: $-cloud,
 
   success: $-avocado,
-  info: $-blueberry,
-  warning: $-beet,
+  info: $-sky,
+  warning: $-mustard,
   danger: $-pomegranate,
 );
 
