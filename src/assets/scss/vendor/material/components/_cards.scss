@@ -2,13 +2,19 @@
   .mat-card {
     @include contrast(color(white));
 
-    border: 1px solid color-neutral(100);
+    border: 1px solid color-neutral(200);
     border-radius: 0;
     box-shadow: none;
     margin: 0 0 1.5rem;
     padding: 2rem;
   }
 
+  .mat-card-title {
+    font-family: font(title, family);
+    font-size: font(h3, size);
+    font-weight: font(title, weight);
+    margin: 0;
+  }
 
   .mat-card-image {
     width: calc(100% + 4rem);
@@ -19,11 +25,9 @@
     }
   }
 
-
-  .mat-card-title {
-    font-family: font(title, family);
-    font-size: font(h3, size);
-    font-weight: font(title, weight);
+  .mat-card-actions,
+  .mat-card-actions:last-child {
     margin: 0;
+    padding: 0;
   }
 }
