@@ -1,6 +1,7 @@
 header.header {
-  //@include contrast(color-neutral(700));
-  @include contrast(color(primary));
+  background: linear-gradient(120deg, color(primary), color(accent));
+  color: contrast(color(primary));
+  height: 8rem;
 
   .title {
     line-height: 1;
