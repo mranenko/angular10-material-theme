@@ -15,6 +15,11 @@
     }
   }
 
+  /* add space between multiple buttons */
+  .mat-button-base + .mat-button-base {
+    margin-left: 1rem;
+  }
+
   .mat-stroked-button {
     border: .2rem solid color(neutral);
     color: color(neutral);
@@ -56,11 +61,8 @@
  */
 
 .summer-theme .mat-button-group {
-  margin: 0 -.2rem;
-
   .mat-button-base {
     display: inline-block;
-    margin: .2rem;
   }
 
   &.mat-button-group-center { text-align: center; }

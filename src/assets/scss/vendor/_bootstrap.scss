@@ -1,6 +1,6 @@
 /* custom row/column spacing */
 .row {
-	$-spacer: .5rem;
+	$-spacer: 1rem;
 
 	margin: 0 #{-($-spacer)} !important;
 
