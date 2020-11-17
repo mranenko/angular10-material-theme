@@ -4,11 +4,9 @@
 
   .mat-sidenav-container,
   .mat-sidenav-content {
-    min-height: 100vh;
-  }
+    @include contrast(none);
 
-  .mat-sidenav-container {
-    background: none;
+    min-height: 100vh;
   }
 
 

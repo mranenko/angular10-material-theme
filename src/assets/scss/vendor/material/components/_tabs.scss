@@ -1,0 +1,35 @@
+.summer-theme {
+  .mat-tab-group {
+    color: inherit;
+    font: inherit;
+  }
+
+
+  /**
+    tab label
+   */
+
+  .mat-tab-label {
+    color: inherit;
+    font: inherit;
+    height: auto;
+    line-height: 2rem;
+    margin: 0 2rem 0 0;
+    min-width: 0;
+    opacity: 1;
+    padding: 1rem 0;
+  }
+
+  .mat-tab-label.mat-tab-label-active {
+    font-weight: font(weight, semibold);
+  }
+
+
+  /**
+    tab body
+   */
+
+  .mat-tab-body-content {
+    padding: 2rem 0;
+  }
+}
