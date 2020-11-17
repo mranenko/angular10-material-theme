@@ -5,10 +5,14 @@ import {Routes, RouterModule} from '@angular/router';
 import {ButtonsPageComponent} from './pages/buttons-page/buttons-page.component';
 import {CardsPageComponent} from './pages/cards-page/cards-page.component';
 import {ColorsPageComponent} from './pages/colors-page/colors-page.component';
+import {ExpansionPageComponent} from './pages/expansion-page/expansion-page.component';
 import {FontsPageComponent} from './pages/fonts-page/fonts-page.component';
-import {WelcomePageComponent} from './pages/welcome-page/welcome-page.component';
+import {FormsPageComponent} from './pages/forms-page/forms-page.component';
+import {IconsPageComponent} from './pages/icons-page/icons-page.component';
+import {InputsPageComponent} from './pages/inputs-page/inputs-page.component';
 import {TabsPageComponent} from './pages/tabs-page/tabs-page.component';
 import {ToolbarPageComponent} from './pages/toolbar-page/toolbar-page.component';
+import {WelcomePageComponent} from './pages/welcome-page/welcome-page.component';
 
 
 const routes: Routes = [
@@ -33,9 +37,29 @@ const routes: Routes = [
     component: ColorsPageComponent,
   },
   {
+    path: 'expansion',
+    pathMatch: 'full',
+    component: ExpansionPageComponent,
+  },
+  {
     path: 'fonts',
     pathMatch: 'full',
     component: FontsPageComponent,
+  },
+  {
+    path: 'forms',
+    pathMatch: 'full',
+    component: FormsPageComponent,
+  },
+  {
+    path: 'icons',
+    pathMatch: 'full',
+    component: IconsPageComponent,
+  },
+  {
+    path: 'inputs',
+    pathMatch: 'full',
+    component: InputsPageComponent,
   },
   {
     path: 'tabs',

@@ -15,6 +15,10 @@ import { ColorsPageComponent } from './pages/colors-page/colors-page.component';
 import { FontsPageComponent } from './pages/fonts-page/fonts-page.component';
 import { ToolbarPageComponent } from './pages/toolbar-page/toolbar-page.component';
 import { TabsPageComponent } from './pages/tabs-page/tabs-page.component';
+import { ExpansionPageComponent } from './pages/expansion-page/expansion-page.component';
+import { FormsPageComponent } from './pages/forms-page/forms-page.component';
+import { IconsPageComponent } from './pages/icons-page/icons-page.component';
+import { InputsPageComponent } from './pages/inputs-page/inputs-page.component';
 
 
 const appPages = [
@@ -32,6 +36,10 @@ const appPages = [
     FontsPageComponent,
     ToolbarPageComponent,
     TabsPageComponent,
+    ExpansionPageComponent,
+    FormsPageComponent,
+    IconsPageComponent,
+    InputsPageComponent,
   ],
   imports: [
     AppRoutingModule,
