@@ -17,10 +17,12 @@
   font-family: font(text, family);
   font-size: font(text, size);
   font-weight: font(text, weight);
+  line-height: font(text, line-height);
 }
 
 .font-family-title {
   font-family: font(title, family);
   font-size: font(h6, size);
   font-weight: font(title, weight);
+  line-height: font(title, line-height);
 }

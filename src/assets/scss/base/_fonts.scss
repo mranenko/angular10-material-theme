@@ -46,6 +46,10 @@ $font: (
  */
 
 $font: map-merge($font, (
+  root: (
+    size: 10px,         /* = 1rem */
+  ),
+
   code: (
     family: font(family, code),
     line-height: 1.8,
@@ -55,12 +59,14 @@ $font: map-merge($font, (
 
   text: (
     family: font(family, text),
+    line-height: 1.5,
     size: 1.4rem,
     weight: font(weight, normal),
   ),
 
   title: (
     family: font(family, title),
+    line-height: 1.1,
     weight: font(weight, normal),
   ),
 ));
@@ -93,9 +99,11 @@ $font: map-merge($font, (
 
   h5: (
     size: 2rem,
+    margin: 0,
   ),
 
   h6: (
     size: 1.8rem,
+    margin: 0,
   ),
 ));
