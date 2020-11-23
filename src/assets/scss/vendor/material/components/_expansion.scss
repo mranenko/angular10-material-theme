@@ -1,9 +1,29 @@
-.expansion-panel.mat-expansion-panel {
-  @include contrast(color(white));
+$-expansion-background: color(white);
+$-expansion-border: 1px solid color-neutral(200);
 
-  border: 1px solid neutral(200);
-  border-radius: 0;
-  box-shadow: none;
-  margin: 0 0 1.5rem;
-  padding: 2rem;
+
+.summer-theme {
+  .mat-expansion-panel {
+    @include contrast($-expansion-background);
+
+    border: $-expansion-border;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 2rem;
+    padding: 0;
+  }
+
+  .mat-expansion-panel-header {
+    font: inherit;
+    height: 4rem;
+    padding: 0 2rem;
+  }
+
+  .mat-expansion-panel-content {
+    font: inherit;
+  }
+
+  .mat-expansion-panel-body {
+    padding: 1rem 2rem 2rem;
+  }
 }

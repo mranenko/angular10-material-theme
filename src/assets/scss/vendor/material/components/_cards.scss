@@ -1,8 +1,12 @@
+$-card-background: color(white);
+$-card-border: 1px solid color-neutral(200);
+
+
 .summer-theme {
   .mat-card {
-    @include contrast(color(white));
+    @include contrast($-card-background);
 
-    border: 1px solid color-neutral(200);
+    border: $-card-border;
     border-radius: 0;
     box-shadow: none;
     margin: 0 0 2rem;
